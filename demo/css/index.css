@@ -1,0 +1,65 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #28a745;
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+.navbar-brand:hover, .nav-link:hover {
+    color: #e0e0e0 !important;
+}
+.container {
+    margin-top: 100px;
+}
+.welcome-container {
+    text-align: center;
+}
+.welcome-container h1 {
+    color: #333;
+    font-size: 2.5rem;
+}
+.welcome-container p {
+    color: #666;
+    font-size: 1.2rem;
+}
+.illustration {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.illustration img {
+    max-width: 400px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .form-container .image-section {
+        display: none;
+    }
+
+    .form-container .form-section {
+        flex: unset;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-section h2 {
+        font-size: 20px;
+    }
+
+    .btn-submit {
+        padding: 12px;
+    }
+
+    .text-link {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,47 @@
+# Ignore composer dependencies
+/vendor/
+/vendor/predis/
+
+
+# Ignore Composer lock file (optional, if you don't want to version it)
+composer.lock
+
+# Ignore environment and configuration files
+.env
+.env.local
+.env.*.local
+
+# Ignore IDE-specific files and folders
+.idea/
+.vscode/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+/logs/
+*.log
+/tmp/
+cache/
+
+# Ignore PHPUnit test result cache
+.phpunit.result.cache
+
+# Ignore build artifacts
+/build/
+/dist/
+
+# Ignore PHPStorm project settings
+/.idea/
+
+# Ignore local PHP server config
+.phpunit.result.cache
+
+# Ignore storage files for Laravel/Lumen (if applicable)
+storage/*.key
+storage/*.log
+storage/*.txt
+storage/debugbar/*
+storage/framework/*
+storage/logs/*

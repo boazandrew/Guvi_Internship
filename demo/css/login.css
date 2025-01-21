@@ -1,0 +1,126 @@
+body {
+    background-color: #eef2f7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.login-container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.login-image {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.login-image img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+.login-form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+.btn-primary {
+    background: #007bff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 15px;
+}
+.btn-primary:hover {
+    background: #0056b3;
+}
+.text-muted a {
+    color: #007bff;
+    text-decoration: none;
+}
+.text-muted a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .login-container .image-section {
+        display: none; 
+    }
+
+    .login-container .form-section {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .form-section h2 {
+        font-size: 22px; 
+    }
+
+    .form-section form {
+        width: 100%; 
+    }
+
+    .form-section .btn-submit {
+        width: 100%; 
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .form-section .text-link {
+        font-size: 14px;
+    }
+
+    .form-section input {
+        font-size: 14px;
+        padding: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .form-section h2 {
+        font-size: 18px; 
+    }
+
+    .form-section input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .form-section .btn-submit {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .form-section .text-link {
+        font-size: 12px;
+    }
+}
